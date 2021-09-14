@@ -1,0 +1,507 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap');
+
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+    overflow-x: hidden;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+  }
+  
+  ol, ul {
+    list-style: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+header{
+    display: flex;
+    width: 100vw;
+    height: auto;
+    min-height: 80px;
+    background-color: white;
+    justify-content: space-between;
+    min-height: 80px;
+    flex-direction: column;
+    margin-top: 20px;
+}
+body{
+    height: 100vh;
+}
+
+nav{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+    font-size: 13px;
+  }
+  
+a:hover {
+    background: rgba(0, 0, 0, 0.05);
+}
+#menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+  
+#menu a {
+    display: block;
+    padding: 0.5rem;
+}
+  
+#btn-mobile {
+    display: none;
+}
+.logo{
+    display: flex;
+    width: auto;
+    min-width: 100px;
+    height: 100%;
+    margin-left: 15em;
+}
+.logoImg{
+    align-self: center;
+}
+
+.containerUser{
+    display: flex;
+    align-self: center;
+    font-family: 'Nunito', sans-serif;
+}
+
+.containerCar{
+    margin-right: 15em;
+    align-self: center;
+}
+
+.inputSearch{
+    width: 17.5em;
+    height: 22px;
+    border: none;
+    border-bottom:1.00051px solid #7A7A7A;
+    align-self: center;
+    color:#7A7A7A;
+    font-family: 'Nunito', sans-serif;
+    background: url("./assets/images/Vector\ \(1\).svg");
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: right;
+}
+
+.none{
+    display: none;
+}
+
+.flex{
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.block{
+    display: none;
+}
+.carrosel{
+    width: 100vw;
+    height: auto;
+}
+
+.containerProducts{
+    width: 100%;
+    height: auto;
+    margin-top: 2em;
+    margin-bottom: 5em;
+}
+
+.moreSale{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+}
+.triangulo{
+    width: 4em;
+    height: 4em;
+    background: #FCFBFC;
+    transform: rotate(90deg);
+    align-self: flex-end;
+}
+
+.barra{
+    border-top: 4.29723px solid #E9BF33;
+    width: 5em;
+    height: 1px;
+    margin-bottom: 1em;
+}
+.font{
+    font-family: 'Nunito', sans-serif;
+    color:#7A7A7A;
+    font-size: 13px;
+    text-align: center;
+}
+
+.center{
+    text-align: center;
+}
+
+.whatsappButton{
+    width: 10em;
+    height: 2.5em;
+    border:none;
+    align-self: center;
+    background-color:#00E676;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+;
+}
+.offer {
+    position: relative;
+    top: -3.4em;
+    left: 13.7em;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    color: white;
+}
+
+.buyAction{
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 900;
+    padding-left: 5px;
+    cursor: pointer;
+}
+
+.triangulo > div{
+    border-right: 4em solid #FCFBFC;
+    border-top: 4em solid red;
+}
+
+.buy{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-left: 4vw;
+}
+
+.containItens{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.raiting{
+    text-align: center;
+}
+
+.margin{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.product{
+    width: 16em;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background: #FCFBFC;
+    margin-right: 1.5em;
+    filter: drop-shadow(0px 1px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 5px;
+    margin-top: 1.5em;
+}
+.containerForm{
+    width: 100vw;
+    height: auto;
+    background-color: #F2F2F2;
+    padding-bottom: 3em;
+}
+
+.title{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    color:#333333;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+form{
+    text-align: center;
+}
+
+input{
+    width: 20em;
+    min-width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    padding-left: 15px;
+    margin-right: 0.5em;
+}
+
+.buttonInput{
+    width: 140px;
+    height: 50px;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    border:none;
+    border-radius: 5px;
+    background: #E9BF33;
+}
+footer{
+    background: black;
+    display: flex;
+    justify-content: space-between;
+}
+.local{
+    margin:0 4vw;
+}
+
+.logoCreators{
+    margin: 0 4vw;
+    display: flex;
+    align-items: center;
+}
+h4{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    color: white;
+    line-height: 27px;
+    font-size: 28px;
+    margin-bottom: 0.5em;
+    padding-top: 0.5em;
+}
+
+.information{
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    font-size: 13px;
+    line-height: 12px; 
+}
+
+.corebiz{
+    margin-right: 1.5em;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10.6017px;
+    line-height: 14px;
+    color: #E9BF33;
+
+}
+.vtex{
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10.6017px;
+    line-height: 14px;
+    color: #E9BF33;
+}
+
+.space{
+    margin-bottom: 1em;
+}
+@media (max-width: 1500px)
+{
+  html{
+      font-size: 90%;
+  }
+}
+
+@media (max-width: 1350px)
+{
+  html{
+      font-size: 70%;
+  }
+}
+
+@media (max-width: 1180px)
+{
+  html{
+      font-size: 60%;
+  }
+
+}
+
+@media (max-width: 1100px)
+{
+
+    .logo{
+        margin-left: 5em;
+    }
+
+    .containerCar{
+        margin-right: 5em;
+    }
+    
+    .containItens{
+        justify-content: center;
+    }
+    .containerProducts{
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .buy{
+        margin-left: 5.5vw;
+    }
+}
+
+@media (max-width: 880px)
+{   
+    
+    .textUser{
+        display: none;
+    }
+
+    .inputSearch{
+        display: none;
+        width: 80vw;
+    }
+
+    .none{
+        display: block;
+        align-self: center;
+    }
+    
+    .block{
+        display: block;
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+    .logo{
+        display: none;
+    }
+    #menu {
+      display: block;
+      position: absolute;
+      width: 100%;
+      top: 70px;
+      right: 0px;
+      background: black;
+      transition: 0.6s;
+      z-index: 1000;
+      height: 0px;
+      visibility: hidden;
+      overflow-y: hidden;
+    }
+    a{
+        color: white !important;
+    }
+    #nav{
+        margin-left: 30px;
+    }
+    #nav.active #menu {
+      height: calc(100vh - 70px);
+      visibility: visible;
+      overflow-y: auto;
+    }
+    #menu a {
+      padding: 1rem 0;
+      margin: 5em 5em;
+      font-size: 1.5em;
+      border-bottom: 2px solid rgba(146, 139, 139, 0.2);
+    }
+    #btn-mobile {
+      display: flex;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      border: none;
+      background: none;
+      cursor: pointer;
+      gap: 0.5rem;
+      align-self: center;
+      color:black
+    }
+    #hamburger {
+      border-top: 2px solid;
+      width: 20px;
+    }
+    #hamburger::after,
+    #hamburger::before {
+      content: '';
+      display: block;
+      width: 20px;
+      height: 2px;
+      background: black;
+      margin-top: 5px;
+      transition: 0.3s;
+      position: relative;
+    }
+    #nav.active #hamburger {
+      border-top-color: transparent;
+    }
+    #nav.active #hamburger::before {
+      transform: rotate(135deg);
+    }
+    #nav.active #hamburger::after {
+      transform: rotate(-135deg);
+      top: -7px;
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    input{
+        margin-bottom: 1.5em;
+    }
+
+    .buttonInput{
+        width: 20em;
+    }
+
+    .some{
+        display:none;
+    }
+
+    .carrosel{
+        background: url("./assets/images/image\ 2.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 300px;
+    }
+
+    @media (max-width: 500px){
+
+        footer{
+            flex-direction: column;
+        }
+
+        .logoCreators{
+            margin-top: 1.5em;
+            justify-content: space-around;
+            padding-bottom: 1.5em;
+        }
+
+    }
+  
+}
